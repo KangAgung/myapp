@@ -1,3 +1,3 @@
 # Myapp
 
-This is my personal project creating an API using node.js
+This is my personal project creating a REST API using Node.js
