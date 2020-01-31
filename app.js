@@ -1,7 +1,7 @@
-const express = require("express");
-const bodyParser = require("body-parser");
+const express = require('express');
+const bodyParser = require('body-parser');
 
-const port = 8000;
+const port = process.env.PORT;
 const app = express();
 
 app.use(bodyParser.json());
@@ -13,3 +13,5 @@ app.listen(port,function (err) {
     if (err) throw err;
     console.log("Server started on port : "+ port);
 });
+
+module.exports = app;
